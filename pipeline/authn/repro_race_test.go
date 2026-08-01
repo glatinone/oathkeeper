@@ -1,3 +1,6 @@
+// Copyright © 2026 Ory Corp
+// SPDX-License-Identifier: Apache-2.0
+
 //go:build race
 // +build race
 
@@ -24,8 +27,8 @@ import (
 
 	"github.com/ory/x/configx"
 
-	. "github.com/ory/oathkeeper/pipeline/authn"
 	"github.com/ory/oathkeeper/internal"
+	. "github.com/ory/oathkeeper/pipeline/authn"
 )
 
 // TestConfigDataRace launches concurrent writers invoking Config() with varying
